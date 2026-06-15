@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Sign In Page</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      transition:0.4s;
+    }
+
+    /* LIGHT MODE */
+    body.light{
+  background:url("https://www.designagency.gr/wp-content/uploads/2022/11/12_asadas12221-scaled.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  color:#111;
+}
+
+    /* DARK MODE */
+    body.dark{
+        background:url("https://www.designagency.gr/wp-content/uploads/2022/11/12_asadas12221-scaled.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+    
+      color:white;
+    }
+
+    .container{
+      width:95%;
+      max-width:1100px;
+      height:90vh;
+      display:flex;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* LEFT SECTION */
+    .welcome-section{
+      flex:1;
+      background:url("https://static.vecteezy.com/system/resources/previews/004/519/301/large_2x/purple-color-gradient-background-free-photo.jpg");
+      background-size:cover;
+       background-position:center;
+       background-repeat:no-repeat;
+      color:white;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+      text-align:center;
+    }
+
+    .welcome-section h1{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .welcome-section p{
+      font-size:18px;
+      line-height:1.6;
+      max-width:400px;
+    }
+   
+
+    /* RIGHT SECTION */
+    .form-section{
+      flex:1;
+      background:url("https://img.freepik.com/premium-vector/abstract-smooth-blur-orange-pink-color-gradient-background-website-banner-graphic-design_120819-975.jpg");
+      background-size:cover;
+       background-position:center;
+       background-repeat:no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+      transition:0.4s;
+    }
+
+    body.dark .form-section{
+      background:#1e1e1e;
+    }
+
+    .form-box{
+      width:80%;
+      max-width:350px;
+    }
+
+    .form-box h2{
+      font-size:35px;
+      margin-bottom:25px;
+      text-align:center;
+    }
+
+    .input-box{
+      margin-bottom:20px;
+    }
+
+    .input-box input{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:10px;
+      background:#f1f1f1;
+      font-size:16px;
+      outline:none;
+    }
+
+    body.dark .input-box input{
+      background:#2d2d2d;
+      color:white;
+    }
+
+    .btn{
+      width:100%;
+      padding:14px;
+      border:none;
+      border-radius:10px;
+      background:#025196;
+      color:white;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#045ea8;
+    }
+
+    .toggle-text{
+      text-align:center;
+      margin-top:18px;
+      font-size:18px;
+    }
+
+    .toggle-text span{
+      color:#024d8f;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    .hidden{
+      display:none;
+    }
+
+    /* DARK MODE BUTTON */
+    .theme-btn{
+      position:absolute;
+      top:20px;
+      right:20px;
+      border:none;
+      padding:10px 15px;
+      border-radius:8px;
+      cursor:pointer;
+      background:#0263b8;
+      color:white;
+      font-size:16px;
+    }
+    .theme-btn:hover{
+        transform:scale(1.05);
+    
+    }
+    .back-button{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    padding:10px 18px;
+    background:#0eb4b9;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+    font-style: bold;
+}
+
+.back-button:hover{
+    transform:scale(1.05);
+}
+
+    /* MOBILE */
+    @media(max-width:900px){
+
+      .container{
+        flex-direction:column;
+        height:auto;
+      }
+
+      .welcome-section{
+        padding:50px 20px;
+      }
+
+      .welcome-section h1{
+        font-size:38px;
+      }
+
+      .form-section{
+        padding:40px 0;
+      }
+
+    }
+
+  </style>
+</head>
+<body class="light">
+    <a href="index.html" class="back-button">
+    Back 
+</a>
+
+  <div class="container">
+
+    <!-- LEFT SECTION -->
+    <div class="welcome-section">
+      <h1>WELCOME</h1>
+      <p>
+        Build your future with creativity, technology, and innovation.<br/>
+        Discover amazing projects, modern tools, and a seamless digital experience.
+      </p>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="form-section">
+
+      <button class="theme-btn" onclick="toggleTheme()">
+        Dark Mode
+      </button>
+
+      <div class="form-box">
+
+        <!-- SIGN IN -->
+        <div id="signin-form">
+          <h2>Sign In</h2>
+
+          <div class="input-box">
+            <input type="email" placeholder="Email">
+          </div>
+
+          <div class="input-box">
+            <input type="password" placeholder="Password">
+          </div>
+
+          <button class="btn">Sign In</button>
+
+          <div class="toggle-text">
+            Don't have an account?
+            <span onclick="showSignup()">Create Account</span>
+          </div>
+        </div>
+
+        <!-- SIGN UP -->
+        <div id="signup-form" class="hidden">
+
+          <h2>Create Account</h2>
+
+          <div class="input-box">
+            <input type="text" placeholder="Full Name">
+          </div>
+
+          <div class="input-box">
+            <input type="email" placeholder="Email">
+          </div>
+
+          <div class="input-box">
+            <input type="password" placeholder="Password">
+          </div>
+
+          <button class="btn">Create Account</button>
+
+          <div class="toggle-text">
+            Already have an account?
+            <span onclick="showSignin()">Sign In</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    function showSignup(){
+      document.getElementById("signin-form").classList.add("hidden");
+      document.getElementById("signup-form").classList.remove("hidden");
+    }
+
+    function showSignin(){
+      document.getElementById("signup-form").classList.add("hidden");
+      document.getElementById("signin-form").classList.remove("hidden");
+    }
+
+    function toggleTheme(){
+
+      const body = document.body;
+      const btn = document.querySelector(".theme-btn");
+
+      body.classList.toggle("dark");
+      body.classList.toggle("light");
+
+      if(body.classList.contains("dark")){
+        btn.innerText = "Light Mode";
+      }
+      else{
+        btn.innerText = "Dark Mode";
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
