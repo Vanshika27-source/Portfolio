@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Vanshika Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <style>
+        html , body{
+            overflow-x: hidden;
+            width: 100%;
+        }
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background:url("https://img.magnific.com/premium-photo/presenting-dark-brown-grunge-background-texture-with-worn-edges_1113569-20551.jpg?semt=ais_hybrid&w=740&q=80.jpg");
+           background-size:cover;
+           background-position:center;
+          background-repeat:no-repeat;
+            background-size:cover ;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: rgb(2, 51, 2);
+        }
+
+        /* Navigation */
+        nav {
+            
+            width: 90%;
+            margin: 20px 60px;    
+        padding: 8px 15px;
+        
+            position:fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(48, 4, 1);
+             }
+             .logo{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+             }
+        .logo img{
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            font-weight: bold;
+
+        }
+        .logo h1{
+            color: white;
+            align-items: left;
+            font-size: 40px;
+            font-style: bold;
+            font-weight: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin-left: auto ;
+            align-items: center;
+            
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.4s;
+            font-size: 20px;
+            
+        }
+        .contact-nav{
+            background-color: brown;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 30px;
+            transition: 0.3s;
+             animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+        .contact-nav:hover{
+         background-color: rgb(218, 15, 15);
+         color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(196, 34, 5);
+            
+        }
+        /* Hamburger */
+
+
+
+
+
+        /* Hero Section */
+        .home{
+            
+           min-height: 100vh;
+           min-width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            background: #5E201E;
+background: linear-gradient(162deg, rgba(94, 32, 30, 1) 13%, rgba(92, 33, 29, 1) 19%, rgba(96, 34, 30, 1) 26%, rgba(95, 36, 29, 1) 35%, rgba(107, 24, 10, 1) 52%, rgba(145, 98, 32, 1) 82%);
+        }
+        .home-text{
+            max-width: 500px;
+        }
+
+        .home-text h1 {
+            font-size: 25px;
+            color: white;
+            margin-top: 50px;
+            text-align: left;
+     }
+        .home-text span{
+            color: #F5E6D3;
+            font-display: swap;
+            font-size: 50px;
+            text-align: left;
+            font-family: 'poppins' , sans-serif;
+            font-family: 'playfair display',serif;
+         }
+        .home-text h3{
+            margin: 15px 0;
+            font-size: 55px;
+        
+            font-style: bold;
+            font-family: 'playfair display',serif;
+            text-align: left;
+            
+  
+        }
+        .frontend-title{
+    font-size: 55px;
+    font-weight: 800;
+    display: inline-block;
+
+    background: linear-gradient(
+        90deg,
+        #df2534,
+        #C0392B,
+        #db751c,
+        #ddb721
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    
+}
+    #typing{
+        
+  width: 20ch;
+  overflow: hidden;
+  white-space: nowrap;
+   animation: typing 4s steps(20 , end) infinite;
+}
+
+@keyframes typing{
+  0% { width: 0; }
+  60% { width: 20ch; }
+  100% { width: 20ch; }
+}
+        .home-text p {
+            line-height: 1.6;
+            font-size: 20px;
+            color:white;
+            text-align: left;
+            text-decoration: dotted;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 30px 30px;
+            
+            justify-content: left;
+            
+            
+
+    background: #022a66;
+    border: 1px solid #d9a17d;
+
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+            transition: 0.5s;
+        }
+
+
+@keyframes blink{
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+  
+}
+        .btn:hover {
+            background-color: rgb(240, 94, 41);
+            transition: 0.5s;
+            
+ animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse{
+  0% { box-shadow: 0 0 0 0 rgba(248, 251, 252, 0.938); }
+  70% { box-shadow: 0 0 0 20px rgba(108,99,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(108,99,255,0); }
+}
+        .home-img img{
+            flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+}
+
+.img-box{
+    width: 380px;
+    height: 380px;
+    border: 1.5px solid rgba(255,190,140,0.4);
+    border-radius: 40px;
+    padding: 12px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+
+.img-box::before{
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border: 1px solid rgba(255,190,140,0.2);
+    border-radius: 50px;
+}
+.img-box::after{
+    content: "✦";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    color: #d9a17d;
+    font-size: 28px;
+}
+        /* Section Layouts */
+        section{
+            padding: 40px 8%;
+            text-align: left;
+            overflow: hidden;
+            
+            
+            
+        }
+
+        section h2 {
+            
+            margin-bottom: 20px;
+            font-size: 40px;
+            color:white;
+            font-style: bold;
+            
+            
+        }
+        .about-me{
+    display: inline-block;
+    position: relative;
+}
+
+.about-me::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #7A0019,
+        #C0392B,
+        #E67E22,
+        #F4D03F
+    );
+}
+
+                /* About Section */
+        .about p{
+            max-width: 700px;
+            margin: 15px 10px;
+            line-height: 1.8;
+            color: white;
+            font-size: 20px;
+            text-align: left;
+            }
+           
+
+
+#about {
+    background:#771b05;
+}
+
+#skills {
+    background: #791f04;
+}
+
+#projects {
+    background: #5e0101;
+}
+
+
+
+
+
+        .skill {
+            background: rgb(145, 21, 21);
+            padding: 20px 35px ;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.4s;
+            color: white;
+            
+        }
+         .skill-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                gap: 20px;
+                margin-top: 10px;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 25px;
+                
+
+            }
+        
+        .skill:hover{
+            transform: translateY(-5px) ;
+        }
+       /* Projects Section */
+        .project-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: centre;
+            gap: 30px;
+            margin-top: 40px;
+        
+        }
+
+        .project-card {
+            width: 300px;
+            background-color: rgb(71, 10, 10);
+            border-radius: 12px;
+            
+            transition: transform 0.7s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 220px;
+            background-color: rgb(20, 10, 10);
+            object-fit:cover;
+            
+        }
+        .project-card h3 {
+            margin-bottom: 15px 0 10px;
+            color: white;
+            font-style: bold;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .project-card p {
+            color: white;
+            padding: 0 15px 20px;
+        }
+        .project-button{
+    display:flex;
+    padding: 12px 25px;
+    padding-left: 100px;
+    padding-right: 50px;
+    background:#131c9e;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+    align-items: center;
+    font-style: bold;
+}
+
+.project-button:hover{
+    transform:scale(1.05);
+}
+
+        /* Contact Section */
+       .contact-section{
+    width:100%;
+    max-width:1300px;
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:60px;
+    display:flex;
+    gap:60px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.3);
+}
+
+.left{
+    flex:1;
+}
+
+.small-text{
+    color:#f4a261;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+.left h1{
+    font-size:65px;
+    color:#f5e6d3;
+    line-height:1.1;
+}
+
+.line{
+    width:250px;
+    height:5px;
+    border-radius:20px;
+    margin:20px 0 30px;
+
+    background:linear-gradient(
+    90deg,
+    #7A0019,
+    #C0392B,
+    #F4A261,
+    #FFD54F
+    );
+}
+
+.desc{
+    color:#e7d7c6;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.info{
+    margin-bottom:25px;
+}
+
+.info h3{
+    color:#f4a261;
+    margin-bottom:5px;
+}
+
+.info p{
+    color:#fff8f0;
+}
+
+.right{
+    flex:1;
+}
+
+.input-group{
+    display:flex;
+    gap:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid #a97142;
+    border-radius:15px;
+    outline:none;
+    color:white;
+    font-size:16px;
+}
+
+textarea{
+    height:180px;
+    resize:none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#d6c0ad;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:700;
+    color:white;
+
+    background:linear-gradient(
+    90deg,
+    #7A0019,
+    #C0392B,
+    #F4A261,
+    #FFD54F
+    );
+
+    transition:0.4s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+@media(max-width:900px){
+
+.contact-section{
+    flex-direction:column;
+    padding:30px;
+}
+
+.left h1{
+    font-size:45px;
+}
+
+.input-group{
+    flex-direction:column;
+    gap:0;
+}
+
+.line{
+    width:180px;
+}
+}
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:white;
+    }
+/* ==========================
+   TABLET
+========================== */
+/* ===========================
+   MOBILE RESPONSIVE NAVBAR
+=========================== */
+
+.menu-toggle{
+    display:none;
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Tablet */
+@media screen and (max-width:992px){
+
+nav{
+    width:95%;
+    margin:10px;
+    padding:12px 18px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav ul{
+    position:absolute;
+    top:75px;
+    right:0;
+    width:240px;
+    background:#4a1309;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+nav ul.active{
+    display:flex;
+}
+
+nav ul li{
+    width:100%;
+}
+
+nav ul li a{
+    display:block;
+    width:100%;
+    padding:12px;
+    text-align:center;
+    font-size:18px;
+}
+
+.contact-nav{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+nav{
+    width:100%;
+margin: 0%;
+    padding: 10px 15px;
+}
+
+.logo h1{
+    font-size:24px;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+}
+
+.menu-toggle{
+    font-size:30px;
+}
+
+nav ul{
+    width:220px;
+    top:65px;
+}
+
+nav ul li a{
+    font-size:17px;
+    padding:10px;
+}
+
+}
+/* ==========================
+   HERO SECTION RESPONSIVE
+========================== */
+
+/* Tablet */
+@media screen and (max-width:1024px){
+
+.home{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:120px 40px 60px;
+    min-height:auto;
+}
+
+.home-text{
+    max-width:100%;
+}
+
+.home-text h1,
+.home-text h3,
+.home-text p{
+    text-align:center;
+}
+
+.home-text h1{
+    font-size:24px;
+}
+
+.home-text span{
+    font-size:48px;
+}
+
+.frontend-title{
+    font-size:42px;
+}
+
+.home-text p{
+    font-size:30px;
+}
+
+.home-img{
+    margin-bottom:30px;
+}
+
+.img-box{
+    width:320px;
+    height:320px;
+    margin:0 auto;
+}
+
+.btn{
+    margin:12px 8px;
+}
+
+}
+
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+.home{
+    padding:100px 20px 40px;
+}
+
+.home-text h1{
+    font-size:20px;
+}
+
+.home-text span{
+    font-size:34px;
+    line-height:1.3;
+}
+.home-text h3{
+    font-size: 30px;
+}
+
+.frontend-title{
+    font-size:28px;
+    width: 20ch;
+}
+
+.home-text p{
+    font-size:19px;
+    text-align:center;
+}
+
+.img-box{
+    width:250px;
+    height:250px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    max-width:250px;
+    margin:15px auto;
+    text-align:center;
+}
+
+}
+
+
+/* Small Mobile */
+@media screen and (max-width:425px){
+
+.home{
+    padding:90px 15px 30px;
+}
+
+.home-text h1{
+    font-size:18px;
+}
+
+.home-text span{
+    font-size:28px;
+}
+
+.frontend-title{
+    font-size:15px;
+    width: 20ch;
+}
+
+.home-text p{
+    font-size:15px;
+}
+
+.img-box{
+    width:210px;
+    height:210px;
+}
+
+}
+/* ==========================
+   ABOUT & SKILLS RESPONSIVE
+========================== */
+
+/* Tablet */
+@media screen and (max-width:1024px){
+
+#about,
+#skills{
+    padding:60px 40px;
+}
+
+.about h2,
+#skills h2{
+    font-size:36px;
+    text-align:center;
+}
+
+.about p{
+    max-width:100%;
+    font-size:30px;
+    text-align:left;
+    line-height:1.8;
+    
+}
+
+.skill-container{
+    justify-content:center;
+    gap:18px;
+}
+
+.skill{
+    width:180px;
+    text-align:center;
+    font-size:20px;
+    padding:18px;
+}
+
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+#about,
+#skills{
+    padding:50px 20px;
+}
+
+.about h2,
+#skills h2{
+    font-size:30px;
+    text-align:center;
+}
+
+.about p{
+    font-size:20px;
+    text-align:left;
+    margin:15px auto;
+}
+
+.skill-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    width:45%;
+    padding:15px;
+    font-size:18px;
+    text-align:center;
+}
+
+}
+
+/* Small Mobile */
+@media screen and (max-width:480px){
+
+.about h2,
+#skills h2{
+    font-size:26px;
+}
+
+.about p{
+    font-size:15px;
+}
+
+.skill{
+    width:100%;
+    font-size:17px;
+    padding:14px;
+}
+
+}
+/* ==========================
+   PROJECTS RESPONSIVE
+========================== */
+
+/* Tablet */
+@media screen and (max-width:1440px){
+
+#projects{
+    padding:60px 40px;
+}
+
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.project-card{
+    width:45%;
+    max-width:350px;
+}
+
+.project-card img{
+    height:220px;
+}
+
+.project-button{
+    display:block;
+    width:85%;
+    margin:20px auto;
+    padding:12px;
+    text-align:center;
+}
+
+}
+
+/* Mobile */
+@media screen and (max-width:768px){
+
+#projects{
+    padding:50px 20px;
+}
+
+#projects h2{
+    text-align:center;
+    font-size:30px;
+}
+
+.project-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.project-card{
+    width:100%;
+    max-width:350px;
+}
+
+.project-card img{
+    height:200px;
+}
+
+.project-card h3{
+    font-size:22px;
+}
+
+.project-card p{
+    font-size:16px;
+    text-align:center;
+}
+
+.project-button{
+    display:block;
+    width:90%;
+    margin:20px auto;
+    padding:12px;
+    text-align:center;
+}
+
+}
+
+/* Small Mobile */
+@media screen and (max-width:480px){
+
+.project-card{
+    max-width:100%;
+}
+
+.project-card img{
+    height:180px;
+}
+
+.project-card h3{
+    font-size:20px;
+}
+
+.project-card p{
+    font-size:15px;
+}
+
+.project-button{
+    width:90%;
+    font-size:16px;
+}
+
+}
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+    
+
+        /* Footer */
+       
+
+        /* Responsive Design */
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src ="vslogo.png" alt="vslogo">
+        <h1>Vanshika</h1>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <!-- Nav Links -->
+    <ul id="nav-links">
+
+        
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="contact-nav">Contact Us☎️</a></li>
+         </ul>
+             </nav>
+    <header class="home" id="home">
+        <div class="home-text">
+        <h1>Hello, I'm</br><span>Vanshika Sharma</span></h1>
+        <h3 id= "typing" class ="frontend-title">Frontend Developer</h3>
+        <p>I create beautiful , responsive and user-friendly websites using HTML , CSS , and JavaScript.
+        </p>
+         <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+            <img src="image2.png"alt="profile">
+            </div>
+   </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2 class="about-me">About Me</h2>
+                <p>I am a developer who loves building clean, functional, and user-friendly web applications. I mix technical code with solid design principles to create seamless experiences for the web.</p>
+                <br>
+                <p>When I'm not coding, you can find me exploring new design trends, learning new frameworks, or contributing to open-source projects.</p>
+            </section>
+        <section id="skills">
+                <h2 class="about-me">My Skills</h2><br/></br></br>
+                <div class="skill-container">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">C</span>
+                <span class="skill">C++</span>
+            </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="about-me">My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/opengraph/1x1.png?mark=https%3A%2F%2Fimages.unsplash.com%2Fopengraph%2Flogo.png&mark-w=64&mark-align=top%2Cleft&mark-pad=50&h=630&w=1200&blend=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1531297484001-80022131f5a1%3Fcrop%3Dfaces%252Cedges%26h%3D630%26w%3D1200%26blend%3D000000%26blend-mode%3Dnormal%26blend-alpha%3D10%26mark-w%3D750%26mark-align%3Dmiddle%252Ccenter%26mark%3Dhttps%253A%252F%252Fimages.unsplash.com%252Fopengraph%252Fsearch-input.png%253Fw%253D750%2526h%253D84%2526txt%253Dportfolio%2526txt-pad%253D80%2526txt-align%253Dmiddle%25252Cleft%2526txt-color%253D%252523000000%2526txt-size%253D40%2526txt-width%253D660%2526txt-clip%253Dellipsis%2526auto%253Dformat%2526fit%253Dcrop%2526q%253D60%26auto%3Dformat%26fit%3Dcrop%26q%3D60%26ixid%3DM3wxMjA3fDB8MXxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fHx8MTc4MTAzNDY1NXww%26ixlib%3Drb-4.1.0&blend-w=1&auto=format&fit=crop&q=60.jpg"alt="project">
+                <h3>Portfolio Website</h3><br/>
+                <p>
+                    Modern responsive personal portfolio website.
+                </p>
+                <a href="index.html"
+                    class="project-button">
+                         Open Portfolio
+                     </a>
+            
+            </div>
+                <div class="project-card">
+                    <img src="https://thumbs.dreamstime.com/b/scientific-calculator-scientific-calculator-type-electronic-calculator-usually-not-handheld-designed-to-142874137.jpg"alt="project">
+                    <h3>Calculator App</h3><br/>
+                    <p>Modern Scientific calculator using JavaScript</p>
+                    <a href="moderncalculator.html"
+                    class="project-button">
+                         Open Calculator
+                     </a>
+                    
+                </div>
+            
+            <div class="project-card">
+                <img src="https://img.freepik.com/free-vector/log-landing-page-web-template_23-2148278513.jpg?semt=ais_hybrid&w=740&q=80.jpg"alt="profile">
+                    <h3>Login Page</h3><br/>
+                    <p>Animated login form with modern UI design.</p>
+                    <a href="loginpage.html"
+                    class="project-button">
+                         Open Login Page
+                     </a>
+            </div>
+            <div class="project-card">
+                <img src="https://www.go-green.ae/wp-content/uploads/2024/10/Market-size-for-eco-friendly-products7.jpg"alt="profile">
+                    <h3>Ecofriendly mart</h3><br/>
+                    <p>Promoting sustainable and green living.</p>
+                    <a href="ecofriendly.html"
+                    class="project-button">
+                         Open mart
+                     </a>
+            </div>
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRenDt-j70MlgR87N_qZmSiZAia6TM7Q_-er4Yn8q46uS9yu3gi2e2AEz4&s=10.jpg"alt="profile">
+                    <h3>Toolhub</h3><br/>
+                    <p>All essential tools in one place.<br/>
+                       "MAKING YOUR LIFE SIMPLE"
+                    </p>
+                    <a href="hub.html"
+                    class="project-button">
+                         Open toolhub
+                     </a>
+            </div>
+            
+        </div>
+    </section>
+   <section id= "contact"
+    class="contact-section">
+
+<div class="left">
+
+<p class="small-text">✨ LET'S CONNECT</p>
+
+<h1>Get In Touch</h1>
+
+<div class="line"></div>
+
+<p class="desc">
+Have a project in mind or want to collaborate?
+Feel free to reach out. I'd love to hear from you.
+</p>
+
+<div class="info">
+<h3>📧 Email</h3>
+<p>vans2002hika@gmail.com</p>
+</div>
+
+<div class="info">
+<h3>📞 Phone</h3>
+<p>+91 9754785790</p>
+</div>
+
+<div class="info">
+<h3>📍 Location</h3>
+<p>India</p>
+</div>
+
+<div class="info">
+<h3>🚀 Let's Work Together!</h3>
+<p>I'm open to exciting opportunities.</p>
+</div>
+
+</div>
+
+<div class="right">
+     <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2ddcc0bc-6840-4dc4-ab7e-d1680535f4e1">
+    
+<div class="input-group">
+<input type="text" name ="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email"required>
+</div>
+
+<input type="text" name="phone" placeholder="Your Phone"required>
+
+<textarea name="Message" placeholder="Your Message"></textarea>
+
+<button type="submit">SEND MESSAGE ✈️</button>
+     </form>
+</div>
+
+
+</section>
+ <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>
